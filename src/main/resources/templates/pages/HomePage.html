@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="components/Head :: styleComponent">
+    </head>
+    <body>
+        <nav th:replace="components/Header :: headerComponent"></nav>
+        <div th:replace="components/search/SearchScheduleByGroupForm :: searchScheduleByGroupFormComponent"></div>
+        <div id="schedule">
+            <div th:replace="components/ScheduleComponent :: scheduleComponent"></div>
+        </div>
+        <footer th:replace="components/Footer :: footerComponent"></footer>
+    </body>
+</html>

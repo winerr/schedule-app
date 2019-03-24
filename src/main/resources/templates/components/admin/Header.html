@@ -1,0 +1,20 @@
+<nav th:fragment="adminHeaderComponent" class="white" role="navigation" xmlns:th="http://www.thymeleaf.org">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo logo-img"><img class="image-height" src="images/schedule-icon.png" th:src="@{images/schedule-icon.png}"></a>
+        <ul class="right hide-on-med-and-down admin-menu">
+            <li><a href="#Schedule">Schedule</a></li>
+            <li><a href="#Teacher">Teacher</a></li>
+            <li><a href="#Subject">Subject</a></li>
+            <li><a href="#Group">Group</a></li>
+            <li class="active"><a href="#Student">Student</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav admin-menu">
+            <li><a href="#Schedule">Schedule</a></li>
+            <li><a href="#Teacher">Teacher</a></li>
+            <li><a href="#Subject">Subject</a></li>
+            <li><a href="#Group">Group</a></li>
+            <li class="active"><a href="#Student">Student</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>

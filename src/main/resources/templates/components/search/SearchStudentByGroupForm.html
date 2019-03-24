@@ -1,0 +1,10 @@
+<div  class="input-field row" xmlns:th="http://www.thymeleaf.org" th:fragment="searchStudentByGroupFormComponent">
+    <div class="col s9 offset-s1 group-select">
+        <select>
+            <option th:value="${g}" th:each="g : ${group}" th:text="${g}">Group name</option>
+        </select>
+    </div>
+    <div class="col s2 center-align">
+        <a id="search-student-by-group" class="btn-floating btn-large waves-effect waves-light main-color"><i class="material-icons">search</i></a>
+    </div>
+</div>

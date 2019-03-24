@@ -1,0 +1,69 @@
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.image-height{
+    height: -webkit-fill-available;
+}
+
+.main-color, .sidenav-trigger{
+    color: #00796b;
+}
+
+.background-main-color{
+    background-color: #00796b;
+}
+
+.secondary-color{
+    color: #4db6ac;
+}
+
+.background-secondary-color{
+    background-color: #4db6ac;
+}
+
+.tabs-color{
+    color: #C34A48;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}

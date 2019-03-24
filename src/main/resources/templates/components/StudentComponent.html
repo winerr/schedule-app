@@ -1,0 +1,8 @@
+<div class="card-content grey lighten-4" th:each="g : ${students}"  xmlns:th="http://www.thymeleaf.org" th:fragment="studentComponent">
+    <div class="card background-secondary-color">
+        <div class="card-content black-text">
+            <span class="card-title" th:text="${g.getKey()}">Group name</span>
+            <p th:each="s : ${g.getValue()}" th:text="${s.getFirstName() + ' ' + s.getSecondName()}">Student name</p>
+        </div>
+    </div>
+</div>

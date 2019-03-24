@@ -1,0 +1,34 @@
+<div class="card" xmlns:th="http://www.thymeleaf.org" th:fragment="scheduleComponent">
+    <!--/*@thymesVar id="v" type="edu.lnu.electronics.schedule.entity.ScheduleModel"*/-->
+    <!--/*@thymesVar id="s" type="java.util.Map.Entry"*/-->
+    <!--/*@thymesVar id="schedule" type="java.util.Map"*/-->
+
+    <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+    </div>
+    <div class="card-tabs">
+        <ul class="tabs tabs-fixed-width tabs-color">
+            <li class="tab"><a href="#mon" class="active">Monday</a></li>
+            <li class="tab"><a href="#tue">Tuesday</a></li>
+            <li class="tab"><a href="#wed">Wednesday</a></li>
+            <li class="tab"><a href="#thu">Thursday</a></li>
+            <li class="tab"><a href="#fri">Friday</a></li>
+        </ul>
+    </div>
+
+    <div class="card-content grey lighten-4">
+        <div th:id="${s.getKey()}" th:each="s : ${schedule}">
+            <div class="row">
+                <div class="col s12 m6" th:each="v : ${s.getValue()}">
+                    <div class="card background-secondary-color">
+                        <div class="card-content black-text">
+                            <span class="card-title" th:text="${v.subject.name + ' ' + v.group.name}">Name of subject</span>
+                            <p th:text="${v.teacher.secondName + ' ' + v.teacher.firstName + ' ' + v.teacher.middleName}">Name of teacher</p>
+                            <p th:text="${v.time.startTime + '-' + v.time.endTime}">11:00 - 12:20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
